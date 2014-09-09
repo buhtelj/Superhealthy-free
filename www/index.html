@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, target-densitydpi=medium-dpi, user-scalable=0" />  
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		
+        <title>Superhealty</title>
+		
+		<script src="js/funkcije.js"></script> <!-- shrenjene vse funkcije programa -->
+		<script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+			
+			function onDeviceReady() {
+				alert("ready");
+				document.addEventListener("offline", whenOffline, false);
+			}
+			function whenOffline() {
+				navigator.notification.alert(
+				'Sorry your internet connection is not working, please enable it !', // message
+				alertDismissed, // callback
+				'Settings', // title
+				'Done' // buttonName
+				);
+				return false;
+			}
+									
+		</script>
+    </head>
+	
+    <body style="">
+		
+		<div width="100%" align="center" style="margin: auto">
+			<div style="padding-top: 30px"></div>
+			<img src="img/logo.png" style="max-width: 30%" />
+			<div style="padding-top: 20px"></div>
+			<div class="napis"> Superhealthy </div>
+			<!-- <img src="img/napis.png" style="max-width: 70%"/> -->
+		</div>
+		
+		<div style="padding-top: 70px"></div>
+		<div class="neki" align="center">
+			<div style="padding-top: 5px"></div>
+			<table width="90%" height="60px" >
+				<tr style="border-bottom: 1px solid #ffffff">
+					<td width="60px"> <img src="img/1.png" style="padding-left: 5px; max-height: 70%;">
+					<td height="30px" width="10px"> </td>
+					<td valign="center" > 
+						<a href="strani/enci.html" class="menii">
+							<div class="font" align="left" style="padding-top: 5px;">ENCYCLOPEDIA OF 
+							<span style="float: right; "> <img src="img/puscica.png"  height="23px"/> </span></div>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<div style="padding-top: 5px"></div>
+		</div>
+		
+		<div class="neki" align="center">
+			<div style="padding-top: 5px"></div>
+			<table width="90%" height="60px" >
+				<tr style="border-bottom: 1px solid #ffffff">
+					<td width="60px"> <img src="img/2.png" style=" max-height: 70%;"/></td>
+					<td height="30px" width="10px"> </td>
+					<td valign="center" > 
+						<a href="strani/simpt.html" class="menii">
+							<div class="font" align="left" style="padding-top: 5px;">SEARCH BY  <span style="float: right"> <img src="img/puscica.png"  height="23px"/> </span> </div>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<div style="padding-top: 5px"></div>
+		</div>
+		
+		
+		<div class="neki" align="center">
+			<div style="padding-top: 5px"></div>
+			<table width="90%" height="60px" >
+				<tr style="border-bottom: 1px solid #ffffff">
+					<td width="60px"> <img src="img/3.png" style="max-height: 70%;"/></td>
+					<td height="30px" width="10px"> </td>
+					<td valign="center" > 
+						<a href="strani/about.html" class="menii">
+							<div class="font" align="left" style="padding-top: 5px;">ABOUT APPLICATION <span style="float: right"> <img src="img/puscica.png"  height="23px"/> </span></div>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<div style="padding-top: 5px"></div>
+		</div>
+		
+
+		<div style="padding-top: 40px"></div>
+		<div class="font" align="center" style="font-size: large;"> "Help yourself with superfood" </div>
+		<div style="padding-top: 40px"></div>
+    </body>
+</html>
