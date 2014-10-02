@@ -40,3 +40,5 @@
 	  }
 	  alert('Query Variable ' + variable + ' not found');
 	}
+	
+	
